@@ -1,112 +1,115 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Book a Trip | SkyWay Travels</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Book a Trip | SkyWay Travels</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<nav class="nav">
-  <div class="container">
-    <div class="brand">SkyWay Travels</div>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="packages.html">Packages</a>
-      <a class="active" href="booking.html">Book</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">About/Contact</a>
-    </div>
-  </div>
-</nav>
+    <nav class="nav">
+        <div class="container">
+            <div class="brand">SkyWay Travels</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages</a>
+                <a class="active" href="booking.html">Book</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">About/Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="container section">
-  <div class="kicker">Reservation</div>
-  <h2>Booking Form</h2>
-  <form action="#" method="post">
-    <div class="inline">
-      <div>
-        <label for="fullname">Full Name</label>
-        <input id="fullname" name="fullname" type="text" required autocomplete="name" placeholder="Your name">
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
-      </div>
+    <div class="container section">
+        <div class="kicker">Reservation</div>
+        <h2>Booking Form</h2>
+        <form action="#" method="post">
+            <div class="inline">
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" name="fullname" type="text" required autocomplete="name" placeholder="Your name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="inline">
+                <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" required placeholder="+91 90000 00000">
+                </div>
+                <div>
+                    <label for="travelers">Travelers</label>
+                    <input id="travelers" name="travelers" type="number" min="1" max="12" value="2" required>
+                </div>
+            </div>
+            <div class="inline">
+                <div>
+                    <label for="start">Start Date</label>
+                    <input id="start" name="start" type="date" required>
+                </div>
+                <div>
+                    <label for="end">End Date</label>
+                    <input id="end" name="end" type="date" required>
+                </div>
+            </div>
+            <div class="inline">
+                <div>
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination" required>
+            <option value="">Select</option>
+            <option>Maldives</option>
+            <option>Swiss Alps</option>
+            <option>Tokyo</option>
+            <option>Rajasthan</option>
+            <option>Bali</option>
+          </select>
+                </div>
+                <div>
+                    <label for="package">Package</label>
+                    <select id="package" name="package" required>
+            <option value="">Select</option>
+            <option>Budget</option>
+            <option>Standard</option>
+            <option>Premium</option>
+            <option>Honeymoon</option>
+          </select>
+                </div>
+            </div>
+            <div class="inline">
+                <div>
+                    <label for="room">Room Type</label>
+                    <select id="room" name="room">
+            <option>Double</option>
+            <option>Suite</option>
+            <option>Family</option>
+          </select>
+                </div>
+                <div>
+                    <label for="meal">Meal Plan</label>
+                    <select id="meal" name="meal">
+            <option>Breakfast Only</option>
+            <option>Half Board</option>
+            <option>All Inclusive</option>
+          </select>
+                </div>
+            </div>
+            <label for="notes">Preferences/Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Special requests or interests"></textarea>
+            <div class="actions">
+                <button type="submit">Submit Booking</button>
+                <button class="secondary" type="reset">Reset</button>
+            </div>
+            <p class="note">Submissions are for demo only.</p>
+        </form>
     </div>
-    <div class="inline">
-      <div>
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" type="tel" required placeholder="+91 90000 00000">
-      </div>
-      <div>
-        <label for="travelers">Travelers</label>
-        <input id="travelers" name="travelers" type="number" min="1" max="12" value="2" required>
-      </div>
-    </div>
-    <div class="inline">
-      <div>
-        <label for="start">Start Date</label>
-        <input id="start" name="start" type="date" required>
-      </div>
-      <div>
-        <label for="end">End Date</label>
-        <input id="end" name="end" type="date" required>
-      </div>
-    </div>
-    <div class="inline">
-      <div>
-        <label for="destination">Destination</label>
-        <select id="destination" name="destination" required>
-          <option value="">Select</option>
-          <option>Maldives</option>
-          <option>Swiss Alps</option>
-          <option>Tokyo</option>
-          <option>Rajasthan</option>
-          <option>Bali</option>
-        </select>
-      </div>
-      <div>
-        <label for="package">Package</label>
-        <select id="package" name="package" required>
-          <option value="">Select</option>
-          <option>Budget</option>
-          <option>Standard</option>
-          <option>Premium</option>
-          <option>Honeymoon</option>
-        </select>
-      </div>
-    </div>
-    <div class="inline">
-      <div>
-        <label for="room">Room Type</label>
-        <select id="room" name="room">
-          <option>Double</option>
-          <option>Suite</option>
-          <option>Family</option>
-        </select>
-      </div>
-      <div>
-        <label for="meal">Meal Plan</label>
-        <select id="meal" name="meal">
-          <option>Breakfast Only</option>
-          <option>Half Board</option>
-          <option>All Inclusive</option>
-        </select>
-      </div>
-    </div>
-    <label for="notes">Preferences/Notes</label>
-    <textarea id="notes" name="notes" rows="4" placeholder="Special requests or interests"></textarea>
-    <div class="actions">
-      <button type="submit">Submit Booking</button>
-      <button class="secondary" type="reset">Reset</button>
-    </div>
-    <p class="note">Submissions are for demo only.</p>
-  </form>
-</div>
 
-<footer class="footer">
-  <div class="container">See pricing on the <a href="packages.html">Packages</a> page</div>
-</footer>
+    <footer class="footer">
+        <div class="container">See pricing on the <a href="packages.html">Packages</a> page</div>
+    </footer>
 </body>
+
 </html>
