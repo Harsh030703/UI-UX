@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechFest ’25 | Register</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="container wrap">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><span>TechFest ’25</span></a>
+      <input id="navcheck" type="checkbox"><label class="nav-toggle" for="navcheck">☰</label>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a class="active" href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact & FAQs</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" id="main">
+    <div class="container">
+      <h2 class="h-underline">Participant Registration</h2>
+      <p class="lead">Fill all required fields. Confirmation will be sent to your email.</p>
+      <form class="card pad form" action="#" novalidate>
+        <div>
+          <label for="name">Team/Participant Name *</label>
+          <input id="name" name="name" required placeholder="Team Phoenix">
+        </div>
+        <div>
+          <label for="college">College *</label>
+          <input id="college" name="college" required placeholder="Aurora College">
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input id="email" type="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div>
+          <label for="phone">Phone *</label>
+          <input id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+        </div>
+        <div class="full">
+          <label for="event">Event *</label>
+          <select id="event" name="event" required>
+            <option value="">Choose an option</option>
+            <option>Hackathon</option>
+            <option>Competitive Programming</option>
+            <option>Robotics Sumo</option>
+            <option>Group Dance</option>
+            <option>Esports: Valorant</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Team Size</label>
+          <input id="size" name="size" type="number" min="1" max="10" value="1">
+        </div>
+        <div>
+          <label for="idlink">ID Proof Link</label>
+          <input id="idlink" name="idlink" type="url" placeholder="Drive link">
+        </div>
+        <div class="full">
+          <label for="notes">Notes</label>
+          <textarea id="notes" rows="4" placeholder="Dietary needs, special setup"></textarea>
+        </div>
+        <div class="full">
+          <label class="check"><input type="checkbox" required> I accept the rules and code of conduct</label>
+        </div>
+        <div class="full">
+          <button class="btn" type="submit">Submit Registration</button>
+        </div>
+        <small class="hint full">For queries: techfest@aurora.edu</small>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container inner">
+      <div>© 2025 TechFest ’25</div>
+      <div class="social mono"><a href="#">📸</a><a href="#">🐦</a><a href="#">📘</a></div>
+    </div>
+  </footer>
+</body>
+</html>
