@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Packages | SkyWay Travels</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="brand">SkyWay Travels</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a class="active" href="packages.html">Packages</a>
+        <a href="booking.html">Book</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">About/Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container section">
+    <div class="kicker">All Tours</div>
+    <h2>Tour Package Details</h2>
+    <table class="table" aria-label="Tour packages with price and duration">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Destination</th>
+          <th>Duration</th>
+          <th>Season</th>
+          <th>Base Price</th>
+          <th>Final Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="packagesBody"></tbody>
+    </table>
+  </div>
+
+  <footer class="footer">
+    <div class="container">Need help choosing? <a href="contact.html">Contact us</a></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

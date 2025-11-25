@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form Validation</title>
+</head>
+<body>
+<form id="f" novalidate>
+  <div>
+    <label>Name <input id="name" required></label>
+  </div>
+  <div>
+    <label>Email <input id="email" type="email" required></label>
+  </div>
+  <div>
+    <label>Age <input id="age" type="number" required></label>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<p id="msg"></p>
+<script>
+const f=document.getElementById("f");
+const nameEl=document.getElementById("name");
+const emailEl=document.getElementById("email");
+const ageEl=document.getElementById("age");
+const msg=document.getElementById("msg");
+f.addEventListener("submit",e=>{
+  e.preventDefault();
+  const nameOk=nameEl.value.trim().length>0;
+  const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim());
+  const age=Number(ageEl.value);
+  const ageOk=Number.isFinite(age)&&age>=18&&age<=100;
+  if(nameOk&&emailOk&&ageOk){msg.textContent="Valid";msg.style.color="green";}
+  else{msg.textContent="Invalid";msg.style.color="red";}
+});
+</script>
+</body>
+</html>
